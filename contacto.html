@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CONTACTO</title>
+</head>
+<body>
+    <header class= "header">
+        <div class= "logo">
+            <a href="./index.html">
+            <h1>
+                ARGENTUR
+            </h1>
+            </a>
+            </div>
+    </header>
+    <main id="mainContent">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="hoteles.html">HOTELES</a>
+                </li>
+                <li>
+                    <a href="paquetes.html">PAQUETES</a>
+                </li>
+                <li>
+                    <a href="seguros.html">SEGUROS</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    <form action="./js/index.js" method="POST"id="formContacto" class="formContacto">
+        <div>
+            <label for="">Nombre:</label>
+            <input type="text" name="nombre"placeholder="Ingrese su nombre"required>
+            <label for="">Apellido:</label>
+            <input type="text"name="apellido"placeholder="Ingrese su apellido"required>
+            <label for="">Email:</label>
+            <input type="email"name="email"placeholder="Ingrese su email"required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,99})$">
+
+            <label for="">Provincia:</label>
+            <select name="localidad" id=""requiered>
+                <option value="">Seleccione una provincia</option>
+                <option value="buenos aires">Buenos Aires</option>
+                <option value="catamarca">Catamarca</option>
+                <option value="santa fe">Santa Fe</option>
+
+            </select>
+        
+        </div>
+        <div>
+            <label for="">Comentarios</label>
+            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="">Quiero suscribirme y llenarme de Spam</label>
+            <input type="checkbox" name="noticias"class="">
+        </div>
+        <div>
+            <input type="button"value="Enviar">
+        </div>
+    </form> 
+
+    </main>
+    <footer class= "footer">
+        <SPan> 
+       &COPY; 2021 - Argentur
+     </SPan>
+        <SPAn> 
+        Desarrollado por <a href="./contacto.html">Sabatte Camila Belen</a>
+    </SPAn>
+
+            <address>
+             Buenos Aires - Argentina   
+            </address>
+   
+
+    </footer>
+    
+</body>
+</html>
